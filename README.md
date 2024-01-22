@@ -132,8 +132,9 @@ This API utilizes JSON Web Tokens (JWTs) for authentication. The current impleme
 ---
 
 ### Additional Notes
+- Please star this repo if it helped you! If it doesn't help or you run into problems let me know so I can update the project.
 - Adjust the JWT configuration and authentication mechanisms to align with your application's security needs and user expectations. 
-- Utoipa + SwaggerUI typically order your routes based on when they're defined in your file. However I've found that they are ordered alphabetically on the route path given to Utoipa.
+- Utoipa + SwaggerUI typically orders your routes based on when they're defined in your file. However, I've found that they are ordered alphabetically on the route path given to Utoipa.
 - If you are on Windows you might need to debug your database connections and ensure your firewall isn't blocking the connections between the API and the database. This will typically cause an exit error (3) without any other logs or information.
 - You can set `RUST_BACKTRACE=full` in your .env file to get better debugging information when using rust-analyzer in VScode.
 - This API is designed to run behind an NGINX instance, however, you can configure OpenSSL yourself using actix-web.
